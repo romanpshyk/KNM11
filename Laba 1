@@ -1,0 +1,30 @@
+print("Hello World")
+
+
+
+a = float (input ("ВвеітЬ a:"))
+b = float (input ("ВведітЬ b:"))
+s = input ("введіть дію:")
+
+if s =="+":
+    print(a, "+", b, "=", a + b)
+elif s =="-":
+    print(a, "-", b, "=", a - b)
+elif s =="*":
+    print(a, "*", b, "=", a * b)
+elif s == "/":
+    if b == 0:
+        print("на нуль ділити не можна")
+    else:
+        print(a, "/", b, "=", a / b)
+else:
+    print("вибери по людски")
+    
+    
+
+
+for i in a:
+    i = i * 2
+    if i == '  ':
+        i = i.replace("  ", " ")
+    print(i, end = "")
