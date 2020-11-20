@@ -28,3 +28,10 @@ for i in a:
     if i == '  ':
         i = i.replace("  ", " ")
     print(i, end = "")
+    
+    
+text = input("введіть слово")
+reverse = ""
+for a in text.split():
+    reverse = '{} {}'.format(reverse, a[::-1])
+print(reverse)
