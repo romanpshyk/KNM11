@@ -1,7 +1,7 @@
 print("Hello World")
 
 
-
+#калькулятор
 a = float (input ("ВвеітЬ a:"))
 b = float (input ("ВведітЬ b:"))
 s = input ("введіть дію:")
@@ -22,16 +22,34 @@ else:
     
     
 
-
+#подвоєння букв
 for i in a:
     i = i * 2
     if i == '  ':
         i = i.replace("  ", " ")
     print(i, end = "")
     
-    
+#переворот слова    
 text = input("введіть слово")
 reverse = ""
 for a in text.split():
     reverse = '{} {}'.format(reverse, a[::-1])
 print(reverse)
+
+
+
+
+#шифир
+alphabet = "abcdefghijklmnoprstuvwxyzabcdefghijklmnoprstuvwxyz"
+text = input("Enter messange")
+key = int(input("Pleas choose the key(can be 1-25)"))
+text = text.lower()
+password = ""
+for i in text:
+    position = alphabet.find(i)
+    newposition = position + key
+    if i in alphabet:
+        password = password + alphabet[newposition]
+    else:
+        password = password + i
+print("your password: ", password)
